@@ -1,0 +1,36 @@
+com:
+    orioltristany:
+        oauth2backendtemplate:
+            accesstoken:
+                validity: 900
+            refreshtoken:
+                validity: 3600
+            keystore:
+                path: /home/oriol.tristany/git/oauth2-backend-template/keystore/mykeystore.keystore
+                alias: myalias
+                password: mypassword
+            clientid: myclientid
+            clientsecret: myclientsecret
+logging:
+    level:
+        com:
+            orioltristany: TRACE
+        org:
+            springframework: DEBUG
+security:
+    oauth2:
+        resource:
+            jwt:
+                keyValue:
+                    -----BEGIN PUBLIC KEY-----
+                    MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr9yNeKFacIXyEnXYh2i4
+                    hgM3WPX3wtszJY9I17u9kq92VjqGqy+oo6LT3x6psS9cEUr9n5x/iVV/EGjo53Vo
+                    0W0B9wGYUyk1QsRNgX+16QRdGq3Yl8bMfl/Yiu8+3DP9FIPHYjJModyP3VEm1b/Z
+                    QQuGQBzTnYzWIqIYGb51yKtwW0tbar/pXQXsJlXGf5Yetn5aJPEDjr+d67fgrP9B
+                    d+KGxA/m5HHPt+ESpe3UemPvto69bRRe9fUTeb4ugp0tRNJCISZYUM5PYP1Yhx86
+                    xxJLpT6VdOcEvRt04TN3F3Q9+0bbqqM1tVaU3+hlqwtOpj9gI0pvSGHOOIvgo/Mq
+                    owIDAQAB
+                    -----END PUBLIC KEY-----
+spring:
+    security:
+        whitelist: /**

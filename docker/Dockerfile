@@ -1,4 +1,4 @@
 FROM openjdk:8-jre-slim
-ADD build/libs/oauth2-authorization-server-only-*.jar /opt/oauth2-authorization-server-only/
-ENTRYPOINT java -jar /opt/oauth2-authorization-server-only/oauth2-authorization-server-only-*.jar
+ADD build/libs/oauth2-backend-template-*.jar /opt/oauth2-backend-template/
+ENTRYPOINT java -jar /opt/oauth2-backend-template/oauth2-backend-template-*.jar
 EXPOSE 8080
